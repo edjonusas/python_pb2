@@ -22,10 +22,9 @@ _runtime_version.ValidateProtobufRuntimeVersion(
 _sym_db = _symbol_database.Default()
 
 
-from gogoproto import gogo_pb2 as gogoproto_dot_gogo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)prompb/io/prometheus/write/v2/types.proto\x12\x16io.prometheus.write.v2\x1a\x14gogoproto/gogo.proto\"^\n\x07Request\x12\x0f\n\x07symbols\x18\x04 \x03(\t\x12<\n\ntimeseries\x18\x05 \x03(\x0b\x32\".io.prometheus.write.v2.TimeSeriesB\x04\xc8\xde\x1f\x00J\x04\x08\x01\x10\x04\"\xa5\x02\n\nTimeSeries\x12\x13\n\x0blabels_refs\x18\x01 \x03(\r\x12\x35\n\x07samples\x18\x02 \x03(\x0b\x32\x1e.io.prometheus.write.v2.SampleB\x04\xc8\xde\x1f\x00\x12;\n\nhistograms\x18\x03 \x03(\x0b\x32!.io.prometheus.write.v2.HistogramB\x04\xc8\xde\x1f\x00\x12\x39\n\texemplars\x18\x04 \x03(\x0b\x32 .io.prometheus.write.v2.ExemplarB\x04\xc8\xde\x1f\x00\x12\x38\n\x08metadata\x18\x05 \x01(\x0b\x32 .io.prometheus.write.v2.MetadataB\x04\xc8\xde\x1f\x00\x12\x19\n\x11\x63reated_timestamp\x18\x06 \x01(\x03\"A\n\x08\x45xemplar\x12\x13\n\x0blabels_refs\x18\x01 \x03(\r\x12\r\n\x05value\x18\x02 \x01(\x01\x12\x11\n\ttimestamp\x18\x03 \x01(\x03\"*\n\x06Sample\x12\r\n\x05value\x18\x01 \x01(\x01\x12\x11\n\ttimestamp\x18\x02 \x01(\x03\"\xc9\x02\n\x08Metadata\x12\x39\n\x04type\x18\x01 \x01(\x0e\x32+.io.prometheus.write.v2.Metadata.MetricType\x12\x10\n\x08help_ref\x18\x03 \x01(\r\x12\x10\n\x08unit_ref\x18\x04 \x01(\r\"\xdd\x01\n\nMetricType\x12\x1b\n\x17METRIC_TYPE_UNSPECIFIED\x10\x00\x12\x17\n\x13METRIC_TYPE_COUNTER\x10\x01\x12\x15\n\x11METRIC_TYPE_GAUGE\x10\x02\x12\x19\n\x15METRIC_TYPE_HISTOGRAM\x10\x03\x12\x1e\n\x1aMETRIC_TYPE_GAUGEHISTOGRAM\x10\x04\x12\x17\n\x13METRIC_TYPE_SUMMARY\x10\x05\x12\x14\n\x10METRIC_TYPE_INFO\x10\x06\x12\x18\n\x14METRIC_TYPE_STATESET\x10\x07\"\xf2\x04\n\tHistogram\x12\x13\n\tcount_int\x18\x01 \x01(\x04H\x00\x12\x15\n\x0b\x63ount_float\x18\x02 \x01(\x01H\x00\x12\x0b\n\x03sum\x18\x03 \x01(\x01\x12\x0e\n\x06schema\x18\x04 \x01(\x11\x12\x16\n\x0ezero_threshold\x18\x05 \x01(\x01\x12\x18\n\x0ezero_count_int\x18\x06 \x01(\x04H\x01\x12\x1a\n\x10zero_count_float\x18\x07 \x01(\x01H\x01\x12@\n\x0enegative_spans\x18\x08 \x03(\x0b\x32\".io.prometheus.write.v2.BucketSpanB\x04\xc8\xde\x1f\x00\x12\x17\n\x0fnegative_deltas\x18\t \x03(\x12\x12\x17\n\x0fnegative_counts\x18\n \x03(\x01\x12@\n\x0epositive_spans\x18\x0b \x03(\x0b\x32\".io.prometheus.write.v2.BucketSpanB\x04\xc8\xde\x1f\x00\x12\x17\n\x0fpositive_deltas\x18\x0c \x03(\x12\x12\x17\n\x0fpositive_counts\x18\r \x03(\x01\x12?\n\nreset_hint\x18\x0e \x01(\x0e\x32+.io.prometheus.write.v2.Histogram.ResetHint\x12\x11\n\ttimestamp\x18\x0f \x01(\x03\x12\x15\n\rcustom_values\x18\x10 \x03(\x01\"d\n\tResetHint\x12\x1a\n\x16RESET_HINT_UNSPECIFIED\x10\x00\x12\x12\n\x0eRESET_HINT_YES\x10\x01\x12\x11\n\rRESET_HINT_NO\x10\x02\x12\x14\n\x10RESET_HINT_GAUGE\x10\x03\x42\x07\n\x05\x63ountB\x0c\n\nzero_count\",\n\nBucketSpan\x12\x0e\n\x06offset\x18\x01 \x01(\x11\x12\x0e\n\x06length\x18\x02 \x01(\rB\tZ\x07writev2b\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)prompb/io/prometheus/write/v2/types.proto\x12\x16io.prometheus.write.v2\"X\n\x07Request\x12\x0f\n\x07symbols\x18\x04 \x03(\t\x12\x36\n\ntimeseries\x18\x05 \x03(\x0b\x32\".io.prometheus.write.v2.TimeSeriesJ\x04\x08\x01\x10\x04\"\x8d\x02\n\nTimeSeries\x12\x13\n\x0blabels_refs\x18\x01 \x03(\r\x12/\n\x07samples\x18\x02 \x03(\x0b\x32\x1e.io.prometheus.write.v2.Sample\x12\x35\n\nhistograms\x18\x03 \x03(\x0b\x32!.io.prometheus.write.v2.Histogram\x12\x33\n\texemplars\x18\x04 \x03(\x0b\x32 .io.prometheus.write.v2.Exemplar\x12\x32\n\x08metadata\x18\x05 \x01(\x0b\x32 .io.prometheus.write.v2.Metadata\x12\x19\n\x11\x63reated_timestamp\x18\x06 \x01(\x03\"A\n\x08\x45xemplar\x12\x13\n\x0blabels_refs\x18\x01 \x03(\r\x12\r\n\x05value\x18\x02 \x01(\x01\x12\x11\n\ttimestamp\x18\x03 \x01(\x03\"*\n\x06Sample\x12\r\n\x05value\x18\x01 \x01(\x01\x12\x11\n\ttimestamp\x18\x02 \x01(\x03\"\xc9\x02\n\x08Metadata\x12\x39\n\x04type\x18\x01 \x01(\x0e\x32+.io.prometheus.write.v2.Metadata.MetricType\x12\x10\n\x08help_ref\x18\x03 \x01(\r\x12\x10\n\x08unit_ref\x18\x04 \x01(\r\"\xdd\x01\n\nMetricType\x12\x1b\n\x17METRIC_TYPE_UNSPECIFIED\x10\x00\x12\x17\n\x13METRIC_TYPE_COUNTER\x10\x01\x12\x15\n\x11METRIC_TYPE_GAUGE\x10\x02\x12\x19\n\x15METRIC_TYPE_HISTOGRAM\x10\x03\x12\x1e\n\x1aMETRIC_TYPE_GAUGEHISTOGRAM\x10\x04\x12\x17\n\x13METRIC_TYPE_SUMMARY\x10\x05\x12\x14\n\x10METRIC_TYPE_INFO\x10\x06\x12\x18\n\x14METRIC_TYPE_STATESET\x10\x07\"\xe6\x04\n\tHistogram\x12\x13\n\tcount_int\x18\x01 \x01(\x04H\x00\x12\x15\n\x0b\x63ount_float\x18\x02 \x01(\x01H\x00\x12\x0b\n\x03sum\x18\x03 \x01(\x01\x12\x0e\n\x06schema\x18\x04 \x01(\x11\x12\x16\n\x0ezero_threshold\x18\x05 \x01(\x01\x12\x18\n\x0ezero_count_int\x18\x06 \x01(\x04H\x01\x12\x1a\n\x10zero_count_float\x18\x07 \x01(\x01H\x01\x12:\n\x0enegative_spans\x18\x08 \x03(\x0b\x32\".io.prometheus.write.v2.BucketSpan\x12\x17\n\x0fnegative_deltas\x18\t \x03(\x12\x12\x17\n\x0fnegative_counts\x18\n \x03(\x01\x12:\n\x0epositive_spans\x18\x0b \x03(\x0b\x32\".io.prometheus.write.v2.BucketSpan\x12\x17\n\x0fpositive_deltas\x18\x0c \x03(\x12\x12\x17\n\x0fpositive_counts\x18\r \x03(\x01\x12?\n\nreset_hint\x18\x0e \x01(\x0e\x32+.io.prometheus.write.v2.Histogram.ResetHint\x12\x11\n\ttimestamp\x18\x0f \x01(\x03\x12\x15\n\rcustom_values\x18\x10 \x03(\x01\"d\n\tResetHint\x12\x1a\n\x16RESET_HINT_UNSPECIFIED\x10\x00\x12\x12\n\x0eRESET_HINT_YES\x10\x01\x12\x11\n\rRESET_HINT_NO\x10\x02\x12\x14\n\x10RESET_HINT_GAUGE\x10\x03\x42\x07\n\x05\x63ountB\x0c\n\nzero_count\",\n\nBucketSpan\x12\x0e\n\x06offset\x18\x01 \x01(\x11\x12\x0e\n\x06length\x18\x02 \x01(\rB\tZ\x07writev2b\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -33,36 +32,22 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'prompb.io.prometheus.write.
 if not _descriptor._USE_C_DESCRIPTORS:
   _globals['DESCRIPTOR']._loaded_options = None
   _globals['DESCRIPTOR']._serialized_options = b'Z\007writev2'
-  _globals['_REQUEST'].fields_by_name['timeseries']._loaded_options = None
-  _globals['_REQUEST'].fields_by_name['timeseries']._serialized_options = b'\310\336\037\000'
-  _globals['_TIMESERIES'].fields_by_name['samples']._loaded_options = None
-  _globals['_TIMESERIES'].fields_by_name['samples']._serialized_options = b'\310\336\037\000'
-  _globals['_TIMESERIES'].fields_by_name['histograms']._loaded_options = None
-  _globals['_TIMESERIES'].fields_by_name['histograms']._serialized_options = b'\310\336\037\000'
-  _globals['_TIMESERIES'].fields_by_name['exemplars']._loaded_options = None
-  _globals['_TIMESERIES'].fields_by_name['exemplars']._serialized_options = b'\310\336\037\000'
-  _globals['_TIMESERIES'].fields_by_name['metadata']._loaded_options = None
-  _globals['_TIMESERIES'].fields_by_name['metadata']._serialized_options = b'\310\336\037\000'
-  _globals['_HISTOGRAM'].fields_by_name['negative_spans']._loaded_options = None
-  _globals['_HISTOGRAM'].fields_by_name['negative_spans']._serialized_options = b'\310\336\037\000'
-  _globals['_HISTOGRAM'].fields_by_name['positive_spans']._loaded_options = None
-  _globals['_HISTOGRAM'].fields_by_name['positive_spans']._serialized_options = b'\310\336\037\000'
-  _globals['_REQUEST']._serialized_start=91
-  _globals['_REQUEST']._serialized_end=185
-  _globals['_TIMESERIES']._serialized_start=188
-  _globals['_TIMESERIES']._serialized_end=481
-  _globals['_EXEMPLAR']._serialized_start=483
-  _globals['_EXEMPLAR']._serialized_end=548
-  _globals['_SAMPLE']._serialized_start=550
-  _globals['_SAMPLE']._serialized_end=592
-  _globals['_METADATA']._serialized_start=595
-  _globals['_METADATA']._serialized_end=924
-  _globals['_METADATA_METRICTYPE']._serialized_start=703
-  _globals['_METADATA_METRICTYPE']._serialized_end=924
-  _globals['_HISTOGRAM']._serialized_start=927
-  _globals['_HISTOGRAM']._serialized_end=1553
-  _globals['_HISTOGRAM_RESETHINT']._serialized_start=1430
-  _globals['_HISTOGRAM_RESETHINT']._serialized_end=1530
-  _globals['_BUCKETSPAN']._serialized_start=1555
-  _globals['_BUCKETSPAN']._serialized_end=1599
+  _globals['_REQUEST']._serialized_start=69
+  _globals['_REQUEST']._serialized_end=157
+  _globals['_TIMESERIES']._serialized_start=160
+  _globals['_TIMESERIES']._serialized_end=429
+  _globals['_EXEMPLAR']._serialized_start=431
+  _globals['_EXEMPLAR']._serialized_end=496
+  _globals['_SAMPLE']._serialized_start=498
+  _globals['_SAMPLE']._serialized_end=540
+  _globals['_METADATA']._serialized_start=543
+  _globals['_METADATA']._serialized_end=872
+  _globals['_METADATA_METRICTYPE']._serialized_start=651
+  _globals['_METADATA_METRICTYPE']._serialized_end=872
+  _globals['_HISTOGRAM']._serialized_start=875
+  _globals['_HISTOGRAM']._serialized_end=1489
+  _globals['_HISTOGRAM_RESETHINT']._serialized_start=1366
+  _globals['_HISTOGRAM_RESETHINT']._serialized_end=1466
+  _globals['_BUCKETSPAN']._serialized_start=1491
+  _globals['_BUCKETSPAN']._serialized_end=1535
 # @@protoc_insertion_point(module_scope)
